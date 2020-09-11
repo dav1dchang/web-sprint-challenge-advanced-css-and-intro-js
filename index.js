@@ -208,11 +208,25 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
+//1 
+
+console.log(artists[0].name);
+
+//2
+
+console.log(artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+function editArtist(artists, index){
 
+  return artists[index].name = 'Vincent Van Gogh'
+
+}//function
+
+console.log(editArtist(artists, 8))//invoking function, Vincent Van Gogh is index = 8
+console.log(artists[8])//double checking specific artist
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -223,9 +237,13 @@ const artists = [
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
-  }
+    
+    return `The artist at index ${array[index].id} is ${array[index].name}`
+
+  }//function
   
+  console.log(getArtistByIndex(artists, 5))//invoking function and testing with random index number.
+
   /**
 
 
