@@ -253,13 +253,11 @@ function get20s(array){
 
   let newArr = [];
 
-  //array.years.split(" ");
-
   for (let i=0; i<array.length; i++) {
-      if (array[i].years.split(" ") >= 1900 && array[i].years.split(" ") <= 2000) {
-          newArr.push(array[i])
+      if (array[i].years.split(" - ") >= '1900' && array[i].years.split(" - ") <= '2000') {
+          newArr.push(array[i].name)
       }//if
-  }//for
+  }//for - end of for loop for newArr.push
   return newArr
 }//function
 
