@@ -249,11 +249,21 @@ function getArtistByIndex(array, index) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+function get20s(array){
 
-  /* Code here */
+  let newArr = [];
 
-}
+  //array.years.split(" ");
+
+  for (let i=0; i<array.length; i++) {
+      if (array[i].years.split(" ") >= 1900 && array[i].years.split(" ") <= 2000) {
+          newArr.push(array[i])
+      }//if
+  }//for
+  return newArr
+}//function
+
+console.log(get20s(artists))//invoking function
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -266,11 +276,14 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
- 
+function removeArtist(array, index) {
+    
+    return array.splice(index,1)
+
+  }//function
+
+  removeArtist(artists, 17)//invoking function, used random index of 17
+  console.log(artists.length)//console logging remaining length of artists array
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -285,11 +298,24 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+let David = {
+  "id": 20, 
+  "name": "David Chang",
+  "years": "1992 - 2020",
+  "genre": "Web Design",
+  "nationality": "American",
+  "bio": "David Chang (1992 - ) was born in California, but grew up in Oregon. He likes basketball.",
+  "paintings": 100
+}
 
-    /* Code here */
+function addArtist(array, object){
 
-  }
+    return array.push(object)
+
+  }//function
+
+addArtist(artists, David)//invoking function
+console.log(artists)//double-checking list to see I was added.
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -299,12 +325,19 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
 
-  /* Code here */
+  let newArr = [];
 
-}
+  for (let i=0; i<array.length; i++) {
+      if (array[i].paintings > 100) {
+          newArr.push(array[i])
+      }//if
+  }//for
+  return newArr  
+}//function
 
+console.log(lotsOfArt(artists))//invoking function
 
 
 // 🎨🎨 STRETCH 🎨🎨//
