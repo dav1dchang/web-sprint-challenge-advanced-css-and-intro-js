@@ -20,12 +20,23 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand. -Thought these questions were going to be asked to us during the sprint review with TL, so I had them answered in my head, not written down. Was instructed by TL to answer questions within the project.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+Web accessibility is how we make web pages and the internet accessible to all people, regardless of how they need to interact with the page. It's supposed to keep all people ind mind, which include, but are not limited to: people with slow internet connections, people utilizing mobile devices, those with physical disabilities and/or visual needs.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+You could avoid using red/green colors (color blindness), you could have alt tags for pictures, you could make your font scale (use rem instead of px), and you could have visual counterparts for every displayed component.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+A variable is a way to store, change, and use date in code. For example, Instagram has lots of variables on a single page: likes, usernames, etc.
+
 4. What is the purpose of using functions in code?
+
+I see functions as basic building blocks that serve primarily two purposes. One is that they help define a logical structure for your program by breaking it down into a number of smaller modules. The second is that they can be used to avoid repeitious commands within the program. For example, instead of writing the same statement 5 times, you could use a for loop to go through the sequence and repeat a command 5 times.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
